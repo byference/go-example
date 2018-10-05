@@ -1,0 +1,11 @@
+### Go ###
+*.o
+*.a
+*.so
+*.exe
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
