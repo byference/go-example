@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-example/chapter01/lesson02/util"
+	"go-example/chapter01/lesson01/util"
 	"time"
 )
 

@@ -1,6 +1,6 @@
 package main
 
-import "go-example/chapter01/lesson02/util"
+import "go-example/chapter01/lesson01/util"
 
 func init() {
 	util.Println("main.init()")
