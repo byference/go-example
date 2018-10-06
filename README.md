@@ -1,18 +1,7 @@
 # 从零开始的go语言学习
 
-![](https://img.shields.io/badge/go--example-1.0.0-green.svg)
 
 
+## 参考资料
 
-
-> 学习途径
-
-- 《Go语言实战》
-
-
-
-
-## 目录
-
-- chapter01
-
+- [Go指南](http://go-tour-zh.appspot.com/welcome/1)
