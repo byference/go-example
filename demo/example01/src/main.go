@@ -13,4 +13,11 @@ func main() {
 	fmt.Println("utils.Test", utils.Test)
 	fmt.Printf("result of utils.Print(): %s.", utils.Print())
 
+	for i := 0; i < 2; i++ {
+		j := utils.GetRandomIntn(100)
+		fmt.Println("utils.GetRandomInt:", j)
+	}
+
+	fmt.Println(utils.Reverse("hello world"))
+
 }
