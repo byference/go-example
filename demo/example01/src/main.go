@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"go-example/demo/example01/src/demo"
 	"go-example/demo/example01/src/utils"
 )
 
@@ -19,5 +20,7 @@ func main() {
 	}
 
 	fmt.Println(utils.Reverse("hello world"))
+
+	demo.StringTest()
 
 }
