@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"go-example/demo/example01/src/demo"
 	"go-example/demo/example01/src/utils"
+	"strings"
 )
 
 func main() {
@@ -22,5 +23,39 @@ func main() {
 	fmt.Println(utils.Reverse("hello world"))
 
 	demo.StringTest()
+
+	//utils.ArrayTest()
+	//utils.MyErrorTest()
+
+	//f := Adder()
+	//fmt.Println("Adder-->", f(1))
+	//fmt.Println("Adder-->", f(10))
+	//fmt.Println("Adder-->", f(100))
+
+	f1 := MakeSuffix(".go")
+	fmt.Println(f1("main"))
+	fmt.Println(f1("main.go"))
+
+}
+
+// 闭包
+func Adder() func(int) int {
+
+	var acc int
+	return func(i int) int {
+		acc += i
+		return acc
+	}
+
+}
+
+func MakeSuffix(suffix string) func(string) string {
+
+	return func(name string) string {
+		if strings.HasSuffix(name, suffix) == false {
+			return name + suffix
+		}
+		return name
+	}
 
 }
