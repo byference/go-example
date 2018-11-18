@@ -36,6 +36,17 @@ func main() {
 	fmt.Println(f1("main"))
 	fmt.Println(f1("main.go"))
 
+	utils.ArrayTest2()
+
+	utils.SliceTest1()
+	utils.SliceTest2()
+	utils.SliceTest3()
+	utils.SliceTest4()
+
+	utils.TestArraySort()
+	utils.TestStringSort()
+	utils.TestSearch()
+
 }
 
 // 闭包
