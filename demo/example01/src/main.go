@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"go-example/demo/example01/src/demo"
 	"go-example/demo/example01/src/utils"
 	"strings"
 )
@@ -22,7 +21,7 @@ func main() {
 
 	fmt.Println(utils.Reverse("hello world"))
 
-	demo.StringTest()
+	//demo.StringTest()
 
 	//utils.ArrayTest()
 	//utils.MyErrorTest()
@@ -46,6 +45,8 @@ func main() {
 	utils.TestArraySort()
 	utils.TestStringSort()
 	utils.TestSearch()
+
+	utils.MapTest()
 
 }
 
