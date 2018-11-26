@@ -21,7 +21,7 @@ func main() {
 
 	// 下面一行，v 是一个 Vertex（而不是 *Vertex）
 	// 所以没有实现 Abser。
-	a = v
+	//a = v
 
 	fmt.Println(a.Abs())
 }

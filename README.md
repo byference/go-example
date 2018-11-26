@@ -21,6 +21,9 @@
     - copy(target, source)可以拷贝切片
     - string底层也是一个byte数组，因此也可以进行切片操作
 
+- 结构体（struct）
+    - 属于值类型
+
 
 
 
