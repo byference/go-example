@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"go-example/demo/example01/src/entity"
 	"go-example/demo/example01/src/utils"
+	"sort"
 	"strings"
 )
 
@@ -48,6 +50,8 @@ func main() {
 
 	utils.MapTest()
 
+	TestInterface()
+
 }
 
 // 闭包
@@ -68,6 +72,23 @@ func MakeSuffix(suffix string) func(string) string {
 			return name + suffix
 		}
 		return name
+	}
+
+}
+
+func TestInterface() {
+
+	fmt.Println("============================TestInterface============================")
+	arr := entity.GetStudents()
+	for _, val := range arr {
+		fmt.Println(val)
+	}
+	sort.Sort(arr)
+
+	fmt.Println("============================TestInterface============================")
+
+	for _, val := range arr {
+		fmt.Println(val)
 	}
 
 }
